@@ -47,18 +47,18 @@ extern NSString *const kAppiraterReminderRequestDate;
 /*
  Place your Apple generated software id here.
  */
-#define APPIRATER_APP_ID				301377083
+#define APPIRATER_APP_ID				533055109
 
 
 /*
  Your localized app's name.
  */
-#define APPIRATER_LOCALIZED_APP_NAME    [[[NSBundle mainBundle] localizedInfoDictionary] objectForKey:(NSString *)kCFBundleNameKey]
+#define APPIRATER_LOCALIZED_APP_NAME    @"DiscoverKidsPlanet"
 
 /*
  Your app's name.
  */
-#define APPIRATER_APP_NAME				APPIRATER_LOCALIZED_APP_NAME ? APPIRATER_LOCALIZED_APP_NAME : [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString*)kCFBundleNameKey]
+#define APPIRATER_APP_NAME				@"DiscoverKidsPlanet"
 
 /*
  This is the message your users will see once they've passed the day+launches
@@ -93,7 +93,7 @@ extern NSString *const kAppiraterReminderRequestDate;
  Users will need to have the same version of your app installed for this many
  days before they will be prompted to rate it.
  */
-#define APPIRATER_DAYS_UNTIL_PROMPT		30		// double
+#define APPIRATER_DAYS_UNTIL_PROMPT		0		// double
 
 /*
  An example of a 'use' would be if the user launched the app. Bringing the app
@@ -105,7 +105,7 @@ extern NSString *const kAppiraterReminderRequestDate;
  Users need to 'use' the same version of the app this many times before
  before they will be prompted to rate it.
  */
-#define APPIRATER_USES_UNTIL_PROMPT		20		// integer
+#define APPIRATER_USES_UNTIL_PROMPT		3		// integer
 
 /*
  A significant event can be anything you want to be in your app. In a
@@ -118,7 +118,7 @@ extern NSString *const kAppiraterReminderRequestDate;
  a significant event, call the method:
  [Appirater userDidSignificantEvent:];
  */
-#define APPIRATER_SIG_EVENTS_UNTIL_PROMPT	-1	// integer
+#define APPIRATER_SIG_EVENTS_UNTIL_PROMPT	3	// integer
 
 /*
  Once the rating alert is presented to the user, they might select
@@ -131,7 +131,7 @@ extern NSString *const kAppiraterReminderRequestDate;
  'YES' will show the Appirater alert everytime. Useful for testing how your message
  looks and making sure the link to your app's review page works.
  */
-#define APPIRATER_DEBUG				YES
+#define APPIRATER_DEBUG				NO
 
 @interface Appirater : NSObject <UIAlertViewDelegate> {
 
